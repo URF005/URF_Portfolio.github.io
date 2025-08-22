@@ -36,9 +36,9 @@ $(document).ready(function () {
   // typing text animation script
   var typed = new Typed(".typing", {
     strings: [
+      "Full Stack Developer",
       "Frontend Developer",
       "Blockchain Application Developer",
-      "Freelancer",
     ],
     typeSpeed: 100,
     backSpeed: 60,
@@ -47,9 +47,9 @@ $(document).ready(function () {
 
   var typed = new Typed(".typing-2", {
     strings: [
+      "Full Stack Developer",
       "Frontend Developer",
       "Blockchain Application Developer",
-      "Freelancer",
     ],
     typeSpeed: 100,
     backSpeed: 60,
