@@ -4,341 +4,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Usama Rehan Farooqi - Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
 </head>
 
 <body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Projects</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+    <button class="scroll-up-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <a href="#home">Usama<span class="accent">.</span></a>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Usama Rehan</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="https://drive.google.com/file/d/1nKKPUQY-yOOsxlJsG1rlDn93tWp0GRqc/view?usp=drive_link"
-                    target="_blank">Hire me</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="images/profile-1.jpg" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Usama and I'm a <span class="typing-2"></span></div>
-                    <p>As a full-stack developer, my core expertise lies in the MERN stack, with a strong focus on the
-                        Next.js framework for building scalable, SEO-friendly web applications. I leverage Next.js for
-                        full-stack development, from creating responsive user interfaces to implementing efficient
-                        server-side logic and APIs. This strong foundation allows me to effectively integrate additional
-                        technologies like blockchain and smart contracts to develop advanced decentralized applications.
-                    </p>
-                    <a href="https://drive.google.com/file/d/1nKKPUQY-yOOsxlJsG1rlDn93tWp0GRqc/view?usp=drive_link"
-                        target="_blank">Download CV</a>
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-wrapper">
+                    <div class="hero-text">
+                        <p class="hero-subtitle">Full Stack Developer</p>
+                        <h1 class="hero-title">Usama Rehan Farooqi</h1>
+                        <p class="hero-description">Full Stack Developer | Blockchain Application Developer | Frontend
+                            Developer</p>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="/images/profile-1.jpg" alt="Usama Rehan Farooqi - Full Stack Developer"
+                            class="profile-img">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- services section start -->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">My Projects</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <span class="material-symbols-outlined">
-                            currency_bitcoin
-                        </span>
-                        <div class="text">Qreal</div>
-                        <p>Qreal streamlines property registration and transactions using blockchain technology on the
-                            Polygon Amoy Testnet with Solidity smart contracts and React.js, ensuring secure,
-                            transparent operations and seamless deployment via Thirdweb.</p>
-                        <a href="https://realestate-three-tau.vercel.app/" target="_blank"><span
-                                class="material-symbols-outlined">
-                                open_in_new
-                            </span></a>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <span class="material-symbols-outlined">
-                            database
-                        </span>
-                        <div class="text">The Rehan Diaries</div>
-                        <p>The Rehan Diaries is a MERN stack application designed to efficiently manage and store text
-                            files, using React for a dynamic frontend and MongoDB for seamless organization, quick
-                            retrieval, and smooth data management.</p>
-                        <a href="https://github.com/URF005/The-Rehan-Diaries" target="_blank"><span
-                                class="material-symbols-outlined">
-                                open_in_new
-                            </span></a>
-
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <span class="material-symbols-outlined">
-                            flutter
-                        </span>
-                        <div class="text">Rehan & Co.</div>
-                        <p>Rehan & Co. proudly unveils a Mobile Boutique offering exquisite rings for sale, featuring a
-                            fully-fledged e-commerce experience meticulously crafted with Flutter for seamless
-                            navigation and unparalleled user satisfaction.</p>
-                        <a href="https://github.com/URF005/URF-Mobile" target="_blank"><span
-                                class="material-symbols-outlined">
-                                open_in_new
-                            </span></a>
-
-
-                    </div>
-
-
-
-                </div>
-
-                <div class="card" id="cm">
-                    <div class="box">
-                        <span class="material-symbols-outlined">
-                            newspaper
-                        </span>
-                        <div class="text">News App</div>
-                        <p>Discover daily news seamlessly with this intuitive news app, expertly powered by React.js.
-                            Integrated with the News API, it delivers real-time updates and ensures effortless browsing
-                            with a smooth, responsive experience.</p>
-
-                        <a href="https://github.com/URF005/News_App" target="_blank"><span
-                                class="material-symbols-outlined">
-                                open_in_new
-                            </span></a>
-
-
-                    </div>
-
-
-
-                </div>
-                <div class="card" id="cm">
-                    <div class="box">
-                        <span class="material-symbols-outlined">
-                            real_estate_agent
-                        </span>
-                        <div class="text">Rentsinn</div>
-                        <p>Rentsinn is a modern Next.js property rental platform for premium Islamabad apartments. It
-                            offers seamless booking with a secure backend and instant notifications. Discover handpicked
-                            homes and book effortlessly.
-                        </p>
-
-                        <a href="https://rentsinn.com/" target="_blank"><span class="material-symbols-outlined">
-                                open_in_new
-                            </span></a>
-
-
-                    </div>
-
-
-
-                </div>
-                <div class="card" id="cm">
-                    <div class="box">
-                        <span class="material-symbols-outlined">
-                            library_books
-                        </span>
-                        <div class="text">BookLend</div>
-                        <p>BookLend introduces an Efficient Library Management System, meticulously designed to manage
-                            and organize library book details with precision and ease, utilizing the power of C++ OOP
-                            for exceptional robustness and scalability.</p>
-
-                        <a href="https://github.com/URF005/Library-Mangement-System" target="_blank"><span
-                                class="material-symbols-outlined">
-                                open_in_new
-                            </span></a>
-
-
-                    </div>
-
-
-
-                </div>
-
-
+    <section class="summary" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About</h2>
+                <div class="title-underline"></div>
             </div>
-
-        </div>
+            <div class="summary-content">
+                <p>Full Stack Developer with expertise in MERN stack and Next.js. Specializing in building scalable web
+                    applications and blockchain solutions with modern technologies.</p>
+            </div>
         </div>
     </section>
 
-    <!-- skills section start -->
+    <section class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>BS Computer Science</h3>
+                    <p class="institution">Sir Syed CASE Institute of Technology Islamabad</p>
+                    <p class="duration">Feb 2021 - Feb 2025</p>
+                </div>
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>XII (F.Sc Pre-Engineering)</h3>
+                    <p class="institution">Sir Syed College Campus 2, Wah Cantt</p>
+                    <p class="duration">Sep 2018 - Sep 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <p class="company">IT Extremes</p>
+                        <p class="date">Aug 2025 - Nov 2025</p>
+                        <ul class="achievements">
+                            <li>Developed full-stack features for real estate platform with 3+ client MERN applications
+                            </li>
+                            <li>Built BoraBici: Complete bike subscription system with Stripe recurring payments</li>
+                            <li>Created MZK Digital: LMS with video watermarking and manual payment workflows</li>
+                            <li>Developed Femilea: E-commerce platform with integrated MLM system and KYC verification
+                            </li>
+                            <li>Implemented Rentsinn: Next.js real estate website for premium property rentals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <span class="material-symbols-outlined">currency_bitcoin</span>
+                        </div>
+                        <h3>Qreal</h3>
+                    </div>
+                    <p class="project-type">Blockchain Real Estate Platform</p>
+                    <p>Full-stack React.js application for property registration and transactions powered by Solidity
+                        smart contracts on Polygon Amoy Testnet. Features secure blockchain backend with data stored on
+                        IPFS.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Solidity</span>
+                        <span>Web3</span>
+                        <span>IPFS</span>
+                    </div>
+                    <a href="https://realestate-three-tau.vercel.app/" target="_blank" class="project-link">View Project
+                        <i class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <span class="material-symbols-outlined">two_wheeler</span>
+                        </div>
+                        <h3>BoraBici</h3>
+                    </div>
+                    <p class="project-type">Bike Subscription Platform</p>
+                    <p>Complete MERN/Next.js monthly bike rental system with secure Stripe recurring payments, user
+                        authentication, and automated WhatsApp reminders. Admin dashboard for bikes, users, and
+                        subscription management.</p>
+                    <div class="project-tech">
+                        <span>MERN</span>
+                        <span>Next.js</span>
+                        <span>Stripe</span>
+                        <span>WhatsApp API</span>
+                    </div>
+                    <a href="http://borabici.com" target="_blank" class="project-link">View Project <i
+                            class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <span class="material-symbols-outlined">school</span>
+                        </div>
+                        <h3>MZK Digital</h3>
+                    </div>
+                    <p class="project-type">Learning Management System</p>
+                    <p>Secure MERN-based LMS with dynamic email watermarking on videos to prevent piracy. Supports
+                        manual Easypaisa/JazzCash payment verification with comprehensive admin dashboard.</p>
+                    <div class="project-tech">
+                        <span>MERN</span>
+                        <span>Video Processing</span>
+                        <span>Watermarking</span>
+                        <span>Payment Gateway</span>
+                    </div>
+                    <a href="http://mzkdigital.com" target="_blank" class="project-link">View Project <i
+                            class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                        </div>
+                        <h3>Femilea</h3>
+                    </div>
+                    <p class="project-type">E-Commerce with MLM System</p>
+                    <p>Next.js/MERN e-commerce platform enhanced with full MLM system including referral tracking,
+                        level-wise commissions, and payout logic. Features KYC verification and support ticketing.</p>
+                    <div class="project-tech">
+                        <span>Next.js</span>
+                        <span>MERN</span>
+                        <span>MLM Logic</span>
+                        <span>KYC</span>
+                    </div>
+                    <a href="https://femilea.com" target="_blank" class="project-link">View Project <i
+                            class="fas fa-external-link-alt"></i></a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <span class="material-symbols-outlined">apartment</span>
+                        </div>
+                        <h3>Rentsinn</h3>
+                    </div>
+                    <p class="project-type">Property Rental Platform</p>
+                    <p>Modern Next.js property rental platform for premium Islamabad apartments with seamless booking,
+                        secure backend infrastructure, and instant notifications to users and admins.</p>
+                    <div class="project-tech">
+                        <span>Next.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Real Estate</span>
+                    </div>
+                    <a href="https://rentsinn.com/" target="_blank" class="project-link">View Project <i
+                            class="fas fa-external-link-alt"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>I am a full-stack developer specializing in the MERN stack (MongoDB, Express.js, React, Node.js)
-                        and modern web technologies. I build end-to-end applications, crafting dynamic interfaces with
-                        React and Next.js, supported by robust Node.js backend systems. My professional experience
-                        includes developing full-stack features for a real estate platform at IT Extremes, where I built
-                        scalable services and integrated React components for efficient property management. My toolkit
-                        is further enhanced by experience with blockchain technologies, enabling innovative and scalable
-                        full-stack solutions for diverse industry applications.</p>
-                    <a href="https://drive.google.com/file/d/1nKKPUQY-yOOsxlJsG1rlDn93tWp0GRqc/view?usp=drive_link"
-                        target="_blank">Read more</a>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line html"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MySQL</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="line php"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MERN</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line mysql"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>React</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line react"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Blockchain</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line block"></div>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="title-underline"></div>
             </div>
-        </div>
-    </section>
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>Get in touch with me to discuss how my expertise can help bring your digital projects to life.
-                        Whether you need web development, app creation, or backend solutions, I'm here to collaborate
-                        and deliver outstanding results. Contact me today, and let's turn your ideas into reality.</p>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Usama Rehan Farooqi</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Islamabad, Pakistan</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">ur476902@gmail.com</div>
-                            </div>
-                        </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Authentication</span>
+                    </div>
                 </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-link"></i>
+                        <h3>Blockchain & Web3</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-tag">Solidity</span>
+                        <span class="skill-tag">Smart Contracts</span>
+                        <span class="skill-tag">Web3.js</span>
+                        <span class="skill-tag">Ethers.js</span>
+                        <span class="skill-tag">Polygon</span>
+                        <span class="skill-tag">IPFS</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- footer section start -->
-    <footer>
-        <span>Created By <a href="https://github.com/URF005">Rehan</a> | <span class="far fa-copyright"></span> 2023 All
-            rights reserved.</span>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a
+                        question or just want to say hello, feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p class="detail-label">Location</p>
+                                <p>Islamabad, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p class="detail-label">Email</p>
+                                <p><a href="mailto:ur476902@gmail.com">ur476902@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p class="detail-label">Phone</p>
+                                <p><a href="tel:+923171522517">+92 317 152 2517</a></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <p class="detail-label">WhatsApp</p>
+                                <p><a href="https://wa.me/923231525852" target="_blank">+92 323 152 5852</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/URF005" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/usama-rehan-farooqi" target="_blank" class="social-link"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://urf005.github.io/URF_Portfolio.github.io/" target="_blank" class="social-link"
+                            aria-label="Portfolio">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required name="name" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required name="email" autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required name="subject" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required name="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Usama Rehan Farooqi. All rights reserved. | Crafted with passion for excellence.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
