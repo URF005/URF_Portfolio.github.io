@@ -599,14 +599,16 @@ section {
 }
 
 .experience-timeline {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-xl);
 }
 
 .timeline-item {
   display: flex;
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-xl);
   animation: slideUp 0.6s ease-out backwards;
 }
 
@@ -621,6 +623,8 @@ section {
 }
 
 .timeline-content {
+  flex: 1;
+  min-width: 0;
   background: var(--primary);
   padding: var(--spacing-xl);
   border-radius: var(--radius-lg);
@@ -663,6 +667,12 @@ section {
   left: 0;
   color: var(--accent);
   font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .experience-timeline {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ============ PROJECTS SECTION ============ */
